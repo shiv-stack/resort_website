@@ -1,0 +1,165 @@
+/* General Styles */
+body {
+  font-family: 'Poppins', sans-serif;
+  color: #333;
+  line-height: 1.6;
+  background-color: #f9f9f9;
+  overflow-x: hidden;
+}
+
+/* Navbar Styles */
+nav {
+  background: linear-gradient(90deg, #0066cc, #0099ff);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+nav h1 {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #fff;
+}
+
+nav a {
+  color: #fff;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: #ffcc00;
+}
+
+/* Footer Styles */
+footer {
+  background-color: #004d99;
+  color: #fff;
+  padding: 1.5rem 0;
+  text-align: center;
+  font-size: 0.9rem;
+  box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Home Page */
+.home-banner {
+  background: url('https://via.placeholder.com/1600x800') no-repeat center center/cover;
+  height: 60vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  text-align: center;
+}
+
+.home-banner h2 {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.home-banner p {
+  font-size: 1.2rem;
+  margin-top: 1rem;
+}
+
+/* About Page */
+.about-section {
+  padding: 2rem;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.about-section h2 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.about-section p {
+  font-size: 1rem;
+  line-height: 1.8;
+}
+
+/* Adventure Page */
+.adventure-section {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.adventure-card {
+  background-color: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.adventure-card:hover {
+  transform: translateY(-10px);
+}
+
+.adventure-card img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+}
+
+.adventure-card h3 {
+  font-size: 1.5rem;
+  margin: 1rem;
+  font-weight: bold;
+}
+
+.adventure-card p {
+  font-size: 1rem;
+  margin: 0 1rem 1rem;
+}
+
+/* Contact Page */
+.contact-form {
+  background-color: #fff;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 0.8rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+.contact-form button {
+  background: linear-gradient(90deg, #0066cc, #0099ff);
+  color: #fff;
+  padding: 0.8rem 1.5rem;
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.contact-form button:hover {
+  background: linear-gradient(90deg, #0055aa, #0077cc);
+}
+
+/* Animations */
+.fade-in {
+  animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
