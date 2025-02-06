@@ -28,6 +28,16 @@ const Contact = () => (
         Send Message
       </button>
     </form>
+    <br />
+    <div className="text-center p-4 top-10  rounded-lg ">
+      <span className="font-bold">Address:</span> Khasra no. 1070 Sherpur Sahaspur Block, Dehra Dun Uttarakhand. Pin 248197
+    </div>
+
+
+
+
+
+
   </motion.div>
 );
 
